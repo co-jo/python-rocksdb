@@ -37,6 +37,7 @@ setup(
         extra_compile_args=extra_compile_args,
         language='c++',
         libraries=['rocksdb', 'snappy', 'bz2', 'z', 'lz4'],
+        include_dirs=['rocksdb'],
     )],
     extras_require={
         "doc": ['sphinx_rtd_theme', 'sphinx'],
